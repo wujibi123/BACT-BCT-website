@@ -504,11 +504,11 @@ figcaption {
     font-size: 8vw;
 }
 
-.h-top-title a:link, a:visited{
+.h-top-title a:link, .h-top-title a:visited{
     color: lightblue;
 }
 
-.h-top-title a:hover, a:active{
+.h-top-title a:hover, .h-top-title a:active{
     color: white;
 }
 
