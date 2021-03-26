@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team | Boston COVID-Tutoring</title>
+    <title>Team | Bay Area COVID-Tutoring</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
@@ -13,14 +13,14 @@
     <div class="nav">
         <div class="logo">
             <a href="./../index.html"><img src="./../assets/img/logo.PNG" alt="BCT Logo" width="38" height="37" class="vertical-center"></a>
-            <a href="./../index.html" style="margin-left: 50px"> BostonCOVID-Tutoring</a>
+            <a href="./../index.html" style="margin-left: 50px"> BayAreaCOVID-Tutoring</a>
         </div>
         <div class="nav-links">
             <ul>
                 <a href="./../index.html">Home</a>
                 <a href="./../01_about/index.html">About</a>
                 <a href="./../02_subjects/index.html">Subjects</a>
-                <div class="dropdown">
+                <!--<div class="dropdown">
                     <a href="./../03_team/execs.html" id="active">Team</a>
                     <div class="dropdown-content">
                           <a href="./../03_team/execs.html">Senior Leadership</a>
@@ -28,11 +28,24 @@
                     </div>
                 </div>
                 <a href="./../03_team/execs.html" class="mobile">Senior Leadership</a>
-                <a href="./../03_team/directory.html" class="mobile">Team</a>
+                <a href="./../03_team/directory.html" class="mobile">Team</a>-->
+                <a href="./../03_team/execs.html" id="active">Leadership</a>
+
                 <a href="./../04_volunteer/index.html">Volunteer</a>
-                <a href="./../06_blog/index.html">Blog</a> <!-- Active means the tag is underlines-->
+                <!--<a href="./../06_blog/index.html">Blog</a> Active means the tag is underlines
 
                 <a href="https://www.gofundme.com/f/raising-money-to-put-towards-improving-tutoring?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1">Donate</a>
+                -->
+
+                <div class="dropdown">
+                    <a href="#" onclick="return false;">Location</a>
+                    <div class="dropdown-content">
+                          <a target="_blank" rel="noopener noreferrer" href="https://bostoncovidtutoring.us/">Boston</a>
+                          <a target="_blank" rel="noopener noreferrer" href="https://bayareacovidtutoring.us/">California Bay Area</a>
+                    </div>
+                </div>
+                <a class="mobile" target="_blank" rel="noopener noreferrer" href="https://bostoncovidtutoring.us/">Boston</a>
+                <a class="mobile" target="_blank" rel="noopener noreferrer" href="https://bayareacovidtutoring.us/">California Bay Area</a>
                 
                 <a href="./../05_signup/index.html" id="sign-up">Sign Up</a>
                 
@@ -49,7 +62,20 @@
     <div class="lead-content-wrapper">
             <div class="team-content-wrapper">
             <div class="sen-mg">
-                <h1 id = "sen-mg-title">Senior Leadership</h1>
+                <h1 id = "sen-mg-title">BACT Leadership</h1>
+                <li class="BACTpeople">
+                    <div class="BACTperson">
+                        <div class="headshot"></div>
+                        <div id = "name">Emma Tung</div>
+                        <div id = "position">Co-Director of BACT</div>
+                        <div class = "BACTbio-toggle">Bio</div>
+                        <p class = "BACTbio">Emma Tung is a high school junior at Milton Academy in Massachusetts. She is co-founder of Bay Area Covid Tutoring and helps manage daily operations for the organization. Living in Silicon Valley, Emma understood the importance of technology, especially during the pandemic. After working with RRRcomputer, an organization that refurbishes used computers and donates them to public schools, Emma wanted to find a way to provide some aid to students online when going to school in person is difficult. Outside of school, Emma enjoys Model UN conferences, playing tennis and skiing, and being the layout editor to Milton’s primary newsletter. Emma hopes that BACT will make an amazing impact on all tutors and tutees just as volunteering in Boston has done for her.</p>
+                    </div>
+                </li>
+             </div>
+
+             <div class="sen-mg">
+                <h1 id = "sen-mg-title">BCT Headquarters Leadership</h1>
                 <li class="people">
                     <div class="person">
                         <div class="headshot"></div>
@@ -82,6 +108,18 @@
                 </li>
                 
             </div>
+
+            <script>
+                var BACTbioToggles = document.getElementsByClassName('BACTbio-toggle');
+                var BACTcards = document.getElementsByClassName('BACTperson');
+                var BACTbios = document.getElementsByClassName('BACTbio');
+
+                //HARDCODED FOR NOW
+                BACTbioToggles[0].addEventListener('click', () => {
+                        BACTbios[0].classList.toggle("bio-open");
+                        BACTcards[0].classList.toggle("bio-open");
+                    });
+            </script>
 
             <script>
                 var bioToggles = document.getElementsByClassName('bio-toggle');
@@ -121,9 +159,9 @@
     </div>
 
     <div class="footer">
-        <div class="copyright">Copyright &copy; 2020 Boston COVID-Tutoring</div>
+        <div class="copyright">Copyright &copy; 2020 Bay Area COVID-Tutoring</div>
         <div class="f-divider"></div>
-        <div class="created">Created by Dylan Higgins, Connie Yang, and Dan Bi</div>
+        <div class="created">Created by Dan Bi</div>
         <div class="f-divider"></div>
         <div class="socials">
             <a href="mailto:bostoncovidtutoring@gmail.com"><i class="fab fa-google" id="gmail"></i></a>

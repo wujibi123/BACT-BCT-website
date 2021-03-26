@@ -503,6 +503,15 @@ figcaption {
     color: white;
     font-size: 8vw;
 }
+
+.h-top-title a:link, a:visited{
+    color: lightblue;
+}
+
+.h-top-title a:hover, a:active{
+    color: white;
+}
+
 .h-sign-up{
     position: absolute;
     bottom: 10%;
@@ -1878,6 +1887,16 @@ figcaption {
     border-bottom: 4px solid lightgrey;
     margin-top: 100px;
 }
+.BACTpeople{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-items: center;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
 .people{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -1887,6 +1906,23 @@ figcaption {
     font-size: 16px;
     margin-top: 100px;
 }
+
+.BACTperson {
+    border: 1px solid black;
+    width: 350px;
+    height: 450px;
+    background: #FBFCFC;
+    display: flex;
+    flex-direction: column;
+}
+
+.BACTperson:nth-child(1) .headshot{
+    background-image: url(../img/emma.JPEG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .person{
     border: 1px solid black;
     width: 350px;
@@ -1895,6 +1931,7 @@ figcaption {
     display: flex;
     flex-direction: column;
 }
+
 .person:nth-child(1) .headshot{
     background-image: url(../img/david.jpeg);
     background-size: cover;
@@ -1936,6 +1973,20 @@ figcaption {
     margin: 0 0 0 0;
     color:rgb(153, 153, 153);
 }
+.BACTbio-toggle{
+    align-self: center;
+    text-align: center;
+    width: 50px;
+    margin: 20px 0 10px 0;
+    background: black;
+    color: white;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all .3s ease-in-out;
+} 
+
 .bio-toggle{
     align-self: center;
     text-align: center;
@@ -1949,6 +2000,19 @@ figcaption {
     border: 1px solid black;
     transition: all .3s ease-in-out;
 } 
+
+.BACTperson.bio-open{
+    height: auto;
+}
+.BACTperson p{
+    display: none;
+    margin: 5%;
+    transition: all .3s;
+}
+.BACTperson p.bio-open{
+    display: block;
+}
+
 .person.bio-open{
     height: auto;
 }
