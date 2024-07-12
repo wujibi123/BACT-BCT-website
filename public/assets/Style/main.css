@@ -1923,6 +1923,15 @@ figcaption {
     background-position: center;
 }
 
+
+.BACTperson:nth-child(2) .headshot{
+    background-image: url(../img/Harrison.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .person{
     border: 1px solid black;
     width: 350px;
